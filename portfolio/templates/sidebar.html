@@ -1,0 +1,11 @@
+{% load static %}
+<div id="sidebar" class="sidebar">
+    <div class="img-text">
+        <img src="{% static 'img/me.JPG' %}" alt="me" class="my-img">
+        <p class="txt">Welcome</p>
+    </div>
+    <div class="links">
+        <a href="{% url 'about' %}">About me</a>
+        <a href="{% url 'projects' %}">Projects</a>
+    </div>
+</div>

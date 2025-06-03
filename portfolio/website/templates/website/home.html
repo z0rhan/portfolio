@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block extraCss %}
+    <link rel="stylesheet" href="{% static 'website/css/home.css' %}">
+{% endblock extraCss %}
+
+{% block content %}
+<div class="home-container">
+    <div class="icons">
+        <a href="https://github.com/z0rhan"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/zorhan-salami-787175344"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</div>
+{% endblock content %}

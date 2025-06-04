@@ -1,0 +1,24 @@
+.footer
+{
+    transition: 0.2s;
+    padding: 1em;
+    p
+    {
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px)
+{   
+    .footer
+    {
+        transition: 0.2s;
+        padding: 1em;
+        p
+        {
+            text-align: center;
+            font-size: 0.75em;
+        }
+    }
+}

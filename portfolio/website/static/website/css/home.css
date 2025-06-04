@@ -1,6 +1,6 @@
 .home-container
 {
-    height: 90vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,4 +16,27 @@
     display: flex;
     justify-content: center;
     gap: 1em;
+}
+
+@media (max-width: 600px)
+{
+    .home-container
+    {
+        height: 92vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fa-brands
+    {
+        font-size: 1.5em;
+    }
+
+    .icons
+    {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
 }

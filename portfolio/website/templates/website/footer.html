@@ -1,3 +1,9 @@
+{% load static %}
+
+{% block extraCss %}
+    <link rel="stylesheet" href="{% static 'website/css/footer.css' %}">
+{% endblock extraCss %}
+
 {% block content %}
 <footer id="footer" class="footer">
     <p>What are you searching for?</p>

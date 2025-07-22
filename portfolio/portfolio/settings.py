@@ -24,12 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m^_6hi#)nmd#z*)1zjh84gqnm1i7o&ydv0g-4bl))6*_8a44gm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [
-    'localhost-dkd4.onrender.com',
-    'localhost'
-]
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='').split(',')
 
 
 # Application definition
@@ -41,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'website.apps.WebsiteConfig',
+    'website',
 ]
 
 MIDDLEWARE = [
